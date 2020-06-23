@@ -190,7 +190,7 @@ const IndexPage = () => (
 
 const indexQuery  = graphql `
   query PostsQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark( sort: { fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           id
