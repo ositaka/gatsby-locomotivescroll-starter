@@ -3,6 +3,7 @@ title: 'second Post'
 date: 2020-06-23 17:00:00
 author: 'Nuno Marques'
 slug: '/second-post'
+image: '../images/placeholder-2.jpg'
 ---
 
 # Hello to the Second post

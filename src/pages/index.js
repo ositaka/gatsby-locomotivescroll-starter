@@ -11,170 +11,13 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Home page</h1>
-    <p>Welcome to my quick Locomotive scroll starter.</p>
-    <h2>Locomotive Scroll and innerHeight</h2>
-    <p>
-      Any component that changes the innerHeight of the page should trigger the
-      update method.
-    </p>
-    <p>
-      In our case <code>window.scroll.update()</code>.{" "}
-      <a href="https://github.com/fcisio/gatsby-locomotivescroll-starter/blob/master/src/components/collapsible.js">
-        See the `collapsible` component
-      </a>
-      .
-    </p>
-    <Collapsible>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </Collapsible>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <p data-scroll data-scroll-speed="1">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p data-scroll data-scroll-speed="2">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <div id="target">
-    <p data-scroll data-scroll-speed="-1" data-scroll-delay="0.05">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-        veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-        rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-      </p>
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
+
     <StaticQuery query={indexQuery} render={data => {
       return (
         <div>
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Post
+            <Post key={node.id}
+              fluid={node.frontmatter.image.childImageSharp.fluid} 
               title={node.frontmatter.title} 
               date={node.frontmatter.date} 
               author={node.frontmatter.author} 
@@ -185,6 +28,19 @@ const IndexPage = () => (
         </div>
       )
     }} />
+
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      <Image />
+    </div>
+    <Collapsible>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
+      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
+      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
+      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
+      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
+    </Collapsible>
+    <Link to="/page-2/">Go to page 2</Link> <br />
   </Layout>
 )
 
@@ -199,6 +55,13 @@ const indexQuery  = graphql `
             date(formatString: "MMM Do YYYY")
             author
             slug
+            image {
+              childImageSharp { 
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           excerpt
         }
