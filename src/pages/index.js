@@ -17,11 +17,12 @@ const IndexPage = () => (
         <div>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Post key={node.id}
-              fluid={node.frontmatter.image.childImageSharp.fluid} 
               title={node.frontmatter.title} 
               date={node.frontmatter.date} 
               author={node.frontmatter.author} 
               slug={node.frontmatter.slug} 
+              tags={node.frontmatter.tags} 
+              fluid={node.frontmatter.image.childImageSharp.fluid} 
               body={node.excerpt} 
             />
           ))}
@@ -62,6 +63,7 @@ const indexQuery  = graphql `
                 }
               }
             }
+            tags
           }
           excerpt
         }
