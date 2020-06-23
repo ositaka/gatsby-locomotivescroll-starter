@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
+    <h1>Home page</h1>
     <p>Welcome to my quick Locomotive scroll starter.</p>
     <h2>Locomotive Scroll and innerHeight</h2>
     <p>
@@ -47,21 +47,23 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link> <br />
-    <p>
+    <p data-scroll data-scroll-speed="1">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
       veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
       rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
     </p>
-    <p>
+    <p data-scroll data-scroll-speed="2">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
       veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
       rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
     </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-      veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-      rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
-    </p>
+    <div id="target">
+    <p data-scroll data-scroll-speed="-1" data-scroll-delay="0.05">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
+        veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
+        rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
+      </p>
+    </div>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
       veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
