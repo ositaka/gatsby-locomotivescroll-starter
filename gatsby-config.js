@@ -1,8 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Locomotive Scroll Starter`,
+    title: `Code Blog`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    menuLinks: [
+      {
+        name: 'Home',
+        link: '/'
+      },
+      {
+        name: 'About',
+        link: '/about'
+      },
+      {
+        name: 'Tags',
+        link: '/tags'
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
