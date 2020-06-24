@@ -11,11 +11,12 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Scroll from "./locomotiveScroll"
 import Header from "./header"
+import Author from "./author"
 import "./layout.css"
 import "./locomotive-scroll.css"
 
 // This `location` prop will serve as a callback on route change
-const Layout = ({ children, location }) => {
+const Layout = ({ children, location, authorImageFluid, postAuthor }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -46,6 +47,7 @@ const Layout = ({ children, location }) => {
         }}
       >
         <main>{children}</main>
+        <Author author={postAuthor} authorFluid={authorImageFluid} />
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

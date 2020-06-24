@@ -16,6 +16,10 @@ module.exports = {
         name: 'Tags',
         link: '/tags'
       },
+      {
+        name: 'Authors',
+        link: '/authors'
+      },
     ],
   },
   plugins: [

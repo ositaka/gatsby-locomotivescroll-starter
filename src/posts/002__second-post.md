@@ -1,7 +1,7 @@
 ---
 title: 'Second Post'
 date: 2020-06-23 17:00:00
-author: 'Nuno Marques'
+author: 'Birgit Verbeke'
 image: '../images/placeholder-2.jpg'
 tags:
     - code
