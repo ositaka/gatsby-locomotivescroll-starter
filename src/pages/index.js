@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import Collapsible from "../components/collapsible"
 import SEO from "../components/seo"
-import Post from "../components/pos"
+import Post from "../components/post"
 import Pagination from "../components/pagination"
 
 const IndexPage = () => {
