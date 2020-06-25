@@ -17,13 +17,13 @@ const IndexPage = () => (
         <div>
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <Post key={node.id}
-              title={node.frontmatter.title} 
-              date={node.frontmatter.date} 
-              author={node.frontmatter.author} 
-              slug={node.fields.slug} 
-              tags={node.frontmatter.tags} 
-              fluid={node.frontmatter.image.childImageSharp.fluid} 
-              body={node.excerpt} 
+              title={node.frontmatter.title}
+              date={node.frontmatter.date}
+              author={node.frontmatter.author}
+              slug={node.fields.slug}
+              tags={node.frontmatter.tags}
+              fluid={node.frontmatter.image.childImageSharp.fluid}
+              body={node.excerpt}
             />
           ))}
         </div>
@@ -45,9 +45,12 @@ const IndexPage = () => (
   </Layout>
 )
 
-const indexQuery  = graphql `
+const indexQuery = graphql`
   query PostsQuery {
-    allMarkdownRemark( sort: { fields: [frontmatter___date], order: DESC}) {
+    allMarkdownRemark( 
+      sort: { fields: [frontmatter___date], order: DESC}
+      limit: 2
+    ) {
       edges {
         node {
           id

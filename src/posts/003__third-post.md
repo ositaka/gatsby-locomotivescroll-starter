@@ -6,6 +6,7 @@ image: '../images/placeholder-3.jpg'
 tags:
     - lifstyle
     - trips
+    - code
 ---
 
 # Hello to the third post

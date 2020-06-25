@@ -7,7 +7,7 @@ import { slugify } from "../utils/utilityFunctions"
 const Post = ({ title, author, slug, date, body, fluid, tags }) => {
     return (
         <>
-            <Link to={slug}>
+            <Link to={`/${slug}`}>
                 <Img className="cover" fluid={fluid} />
                 <h2 data-scroll data-scroll-speed=".5">{title}</h2>
             </Link>
@@ -22,7 +22,7 @@ const Post = ({ title, author, slug, date, body, fluid, tags }) => {
                 ))}
             </ul>
             <p>{body}</p>
-            <Link className="read-more" to={slug}>Read more</Link>
+            <Link className="read-more" to={`/${slug}`}>Read more</Link>
         </>
     )
 }
