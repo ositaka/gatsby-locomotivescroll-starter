@@ -123,7 +123,7 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    const postsPerPage = 2
+    const postsPerPage = 4
     const numberOfPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numberOfPages}).forEach((_, index) => {
@@ -133,15 +133,15 @@ exports.createPages = ({ actions, graphql }) => {
       if(isFirstPage) return
       
       createPage({
-        path: `/page/${currentPage}`,
-        component: templates.postList,
-        context: {
-          limit: postsPerPage,
-          skip: index + postsPerPage,
-          currentPage,
-          numberOfPages,
-        }
-      })
+				path: `/page/${currentPage}`,
+				component: templates.postList,
+				context: {
+					limit: postsPerPage,
+					skip: index + currentPage,
+					currentPage,
+					numberOfPages
+				}
+			})
     })
   })
 }

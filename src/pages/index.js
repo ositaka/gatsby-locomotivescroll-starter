@@ -9,7 +9,7 @@ import Post from "../components/post"
 import Pagination from "../components/pagination"
 
 const IndexPage = () => {
-  const postsPerPage = 2
+  const postsPerPage = 4
   let numberOfPages
 
   return (
@@ -57,7 +57,7 @@ const indexQuery = graphql`
   query PostsQuery {
     allMarkdownRemark( 
       sort: { fields: [frontmatter___date], order: DESC}
-      limit: 2
+      limit: 3
     ) {
       totalCount
       edges {
