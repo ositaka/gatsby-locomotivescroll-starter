@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import Collapsible from "../components/collapsible"
 import SEO from "../components/seo"
-import Post from "../components/post"
+import Post from "../components/pos"
 import Pagination from "../components/pagination"
 
 const IndexPage = () => {
@@ -46,7 +46,7 @@ const IndexPage = () => {
         rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
         veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae sunt
-        rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo.
+        rem.
     </Collapsible>
       <Link to="/page-2/">Go to page 2</Link> <br />
     </Layout>
