@@ -2,7 +2,6 @@ import { useEffect } from "react"
 
 // We are excluding this from loading at build time in gatsby-node.js
 import LocomotiveScroll from "locomotive-scroll"
-
 import { scroll } from "../theme"
 
 const Scroll = callbacks => {

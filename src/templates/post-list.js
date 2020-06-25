@@ -4,10 +4,11 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Post from "../components/Post"
+import Pagination from "../components/pagination"
 
 const postList = (props) => {
   const posts = props.data.allMarkdownRemark.edges
-  const { currentPage } = props.pageContext
+  const { currentPage, numberOfPages } = props.pageContext
 
   return (
 		<Layout>
@@ -24,6 +25,7 @@ const postList = (props) => {
         fluid={node.frontmatter.image.childImageSharp.fluid}
       />
     ))}
+    <Pagination currentPage={currentPage} numberOfPages={numberOfPages} />
   </Layout>
   )
 }
