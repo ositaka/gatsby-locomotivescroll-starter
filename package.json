@@ -17,6 +17,7 @@
     "gsap": "^3.3.0",
     "locomotive-scroll": "^3.5.4",
     "lodash": "^4.17.15",
+    "netlify-cms": "^2.10.51",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-device-detect": "^1.12.1",
