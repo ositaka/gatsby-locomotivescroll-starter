@@ -19,9 +19,7 @@ const IndexPage = () => {
 			<StaticQuery
 				query={indexQuery}
 				render={data => {
-					numberOfPages = Math.ceil(
-						data.allMarkdownRemark.totalCount / postsPerPage,
-					)
+					numberOfPages = Math.ceil(data.allMarkdownRemark.totalCount / postsPerPage)
 					return (
 						<div>
 							{data.allMarkdownRemark.edges.map(({ node }) => (
@@ -45,12 +43,10 @@ const IndexPage = () => {
 				<Image />
 			</div>
 			<Collapsible>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-				veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae
-				sunt rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia
-				quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero
-				veritatis totam, iste hic quibusdam doloribus, odio aliquid molestiae
-				sunt rem.
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. A libero veritatis totam, iste hic quibusdam doloribus,
+				odio aliquid molestiae sunt rem. Minima, adipisci modi! Cumque aperiam delectus pariatur quia quo. Lorem ipsum
+				dolor sit amet consectetur adipisicing elit. A libero veritatis totam, iste hic quibusdam doloribus, odio
+				aliquid molestiae sunt rem.
 			</Collapsible>
 			<Link to="/page-2/">Go to page 2</Link> <br />
 		</Layout>
@@ -59,10 +55,7 @@ const IndexPage = () => {
 
 const indexQuery = graphql`
 	query PostsQuery {
-		allMarkdownRemark(
-			sort: { fields: [frontmatter___date], order: DESC }
-			limit: 3
-		) {
+		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 3) {
 			totalCount
 			edges {
 				node {
