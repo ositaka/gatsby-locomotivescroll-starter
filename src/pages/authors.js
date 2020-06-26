@@ -13,13 +13,13 @@ const AuthorsPage = () => (
 	<Layout>
 		<SEO title="Authors" />
 		<h1>The Authors</h1>
-		<div class="author">
+		<div className="author">
 			<img src={NunoImage} alt="Nuno profile" />
 			<h2>{authors[0].name}</h2>
 			<p>{authors[0].bio}</p>
 			<Link to={`/author/${slugify(authors[0].name)}`}>View posts</Link>
 		</div>
-		<div class="author">
+		<div className="author">
 			<img src={BirgitImage} alt="Birgit profile" />
 			<h2>{authors[1].name}</h2>
 			<p>{authors[1].bio}</p>

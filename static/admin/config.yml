@@ -1,3 +1,6 @@
+# You can find more info about this config file here:
+# https://www.netlifycms.org/docs/widgets/
+
 backend:
   # name: test-repo //
   name: git-gateway
