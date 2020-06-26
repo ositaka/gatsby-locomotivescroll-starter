@@ -48,7 +48,7 @@ export const postListQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 700, maxHeight: 380) {
-                  ...GatsbyImageSharpFluid	
+                  ...GatsbyImageSharpFluid_tracedSVG	
                 }
               }
             }

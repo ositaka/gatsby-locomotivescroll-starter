@@ -71,7 +71,7 @@ const indexQuery = graphql`
             image {
               childImageSharp { 
                 fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }

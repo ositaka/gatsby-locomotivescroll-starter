@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Post from "../components/Post"
@@ -47,7 +46,7 @@ export const tagQuery = graphql`
             image {
               childImageSharp {
                 fluid(maxWidth: 700, maxHeight: 380) {
-                  ...GatsbyImageSharpFluid	
+                  ...GatsbyImageSharpFluid_tracedSVG	
                 }
               }
             }
