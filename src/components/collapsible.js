@@ -1,81 +1,81 @@
-import React, { useState, useRef, useEffect } from "react"
-import { gsap } from "gsap/all"
-import { isBrowser } from "react-device-detect"
+import React, { useState, useRef, useEffect } from 'react'
+import { gsap } from 'gsap/all'
+import { isBrowser } from 'react-device-detect'
 
 //! This method is essential to keep the scroll height up to date.
 const updateScroll = () => isBrowser && window.scroll.update()
 
 const collapsible = node => {
-  const tl = gsap.timeline({
-    defaults: {
-      duration: 0.35,
-      ease: " power1.inOut",
-    },
-  })
+	const tl = gsap.timeline({
+		defaults: {
+			duration: 0.35,
+			ease: ' power1.inOut',
+		},
+	})
 
-  //! We call this method after every change that impacts the page height.
-  const animation = tl
-    .call(() => updateScroll())
-    .fromTo(
-      node,
-      { height: 0, willChange: "height" },
-      { height: "auto", clearProps: "willChange" }
-    )
-    .call(() => updateScroll())
-    .pause()
+	//! We call this method after every change that impacts the page height.
+	const animation = tl
+		.call(() => updateScroll())
+		.fromTo(
+			node,
+			{ height: 0, willChange: 'height' },
+			{ height: 'auto', clearProps: 'willChange' },
+		)
+		.call(() => updateScroll())
+		.pause()
 
-  let open = () => animation.play()
-  let close = () => animation.reverse(0)
+	let open = () => animation.play()
+	let close = () => animation.reverse(0)
 
-  return { open, close }
+	return { open, close }
 }
 
 const Collapsible = ({ children }) => {
-  const [state, setState] = useState({
-    initial: false,
-    clicked: null,
-  })
+	const [state, setState] = useState({
+		initial: false,
+		clicked: null,
+	})
 
-  let body = useRef(null)
+	let body = useRef(null)
 
-  const handleClick = () => {
-    if (state.initial === false) {
-      setState({
-        initial: null,
-        clicked: true,
-      })
-    } else if (state.clicked === true) {
-      setState({
-        clicked: !state.clicked,
-      })
-    } else if (state.clicked === false) {
-      setState({
-        clicked: !state.clicked,
-      })
-    }
-  }
+	const handleClick = () => {
+		if (state.initial === false) {
+			setState({
+				initial: null,
+				clicked: true,
+			})
+		} else if (state.clicked === true) {
+			setState({
+				clicked: !state.clicked,
+			})
+		} else if (state.clicked === false) {
+			setState({
+				clicked: !state.clicked,
+			})
+		}
+	}
 
-  useEffect(() => {
-    if (state.clicked === false) {
-      collapsible(body).close()
-    } else if (
-      state.clicked === true ||
-      (state.clicked === true && state.initial === null)
-    ) {
-      collapsible(body).open()
-    }
-  }, [state])
+	useEffect(() => {
+		if (state.clicked === false) {
+			collapsible(body).close()
+		} else if (
+			state.clicked === true ||
+			(state.clicked === true && state.initial === null)
+		) {
+			collapsible(body).open()
+		}
+	}, [state])
 
-  return (
-    <button className="Collapse" onClick={() => handleClick()}>
-      <div className="Collapse_Plus">Click Me +</div>
-      {children && (
-        <div className="Collapse_Content" ref={el => (body = el)}>
-          <div>{children}</div>
-        </div>
-      )}
-    </button>
-  )
+	return (
+		<button className="Collapse" onClick={() => handleClick()}>
+			<div className="Collapse_Plus">Click Me +</div>
+			{children && (
+				<div className="Collapse_Content" ref={el => (body = el)}>
+					<div>{children}</div>
+				</div>
+			)}
+		</button>
+	)
 }
 
 export default Collapsible
