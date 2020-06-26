@@ -1,4 +1,6 @@
 ---
+templateKey: blog-post
+
 title: '4th — This is my fourth'
 date: 2020-06-25 18:00:00
 author: 'Nuno Marques'

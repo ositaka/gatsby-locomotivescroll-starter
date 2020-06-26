@@ -1,4 +1,6 @@
 ---
+templateKey: blog-post
+
 title: '10th Post'
 date: 2020-06-25 23:40:00
 author: 'Birgit Verbeke'

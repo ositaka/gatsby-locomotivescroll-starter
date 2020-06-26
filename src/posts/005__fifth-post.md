@@ -1,4 +1,6 @@
 ---
+templateKey: blog-post
+
 title: '5th Post for testing'
 date: 2020-06-25 22:00:00
 author: 'Nuno Marques'
